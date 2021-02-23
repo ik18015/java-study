@@ -1,5 +1,3 @@
-aho
-aaa
-bbb
-ccc
-ddd
+ohyama
+ishikawa
+satake

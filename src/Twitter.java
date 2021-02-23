@@ -22,7 +22,10 @@ public class Twitter {
             i++; // ④
         }
 
-        register();
+        register("ishikawa"); //ishikawaは登録されています
+        register("ohyama"); //は登録されています
+        register("satake"); //は登録されています
+        register("aho"); //ahoを登録しました
     }
 
     private static void register() {
