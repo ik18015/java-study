@@ -19,6 +19,7 @@ public class Twitter {
         while (i < args.length ) { // ②
             // ↓ 何か書く
             System.out.println(args[i]); // ③
+            System.out.println(args[i]);
             i++; // ④
         }
 
@@ -70,6 +71,15 @@ public class Twitter {
         // なければ登録する
         // users.txt にユーザ名を追加する
         // 終了
+    }
+    private static boolean checkBeforeWritefile(File file){
+        if (file.exists()){
+            if (file.isFile() && file.canWrite()){
+                return true;
+            }
+        }
+
+        return false;
     }
 }
 
