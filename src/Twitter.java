@@ -72,6 +72,28 @@ public class Twitter {
         // users.txt にユーザ名を追加する
         // 終了
     }
+
+    private static void tweet(String username ,String message){
+        try{
+            File file = new File("src\\tweet.txt");
+
+            if (checkBeforeWritefile(file)){
+                FileWriter filewriter = new FileWriter(file, true);
+
+                filewriter.write("\n" + "username:");
+                filewriter.write(username);
+                filewriter.write(" message:");
+                filewriter.write(message);
+                //username:実際の名前 message:書き込んだもの
+                filewriter.close();
+            }else{
+                System.out.println("ファイルに書き込めません");
+            }
+        }catch(IOException e){
+            System.out.println(e);
+        }
+    }
+
     private static boolean checkBeforeWritefile(File file){
         if (file.exists()){
             if (file.isFile() && file.canWrite()){
