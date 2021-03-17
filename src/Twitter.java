@@ -35,7 +35,6 @@ public class Twitter {
         String username = "ishikawa";
 
         // 同じユーザ名では登録できない（二重登録はだめ）
-
         // users.txt を読み込む （既に登録されているユーザ名の情報を読み込む）
         // 文字列型変数の配列を作って
         String[] users = new String[10];
